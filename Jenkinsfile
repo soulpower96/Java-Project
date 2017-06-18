@@ -40,7 +40,7 @@ post {
 		    label 'CentOS'
 			}
 		  steps {
-		    sh "wget http://54.186.78.46/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar
+		    sh "wget http://54.186.78.46/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
 		    sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
 }
 }
