@@ -37,7 +37,7 @@ post {
 }
 		stage("Running on CentOS") {
 		  agent {
-		    label 'CentOS'
+		    label 'centos_slave1'
 			}
 		  steps {
 		    sh "wget http://54.186.78.46/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
